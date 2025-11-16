@@ -32,7 +32,7 @@
      </spacer>
     </item>
     <item>
-     <widget class="QPushButton" name="SendButton">
+     <widget class="QPushButton" name="RecvButton">
       <property name="minimumSize">
        <size>
         <width>350</width>
@@ -74,7 +74,7 @@
      </spacer>
     </item>
     <item>
-     <widget class="QPushButton" name="RecieveButton">
+     <widget class="QPushButton" name="SendButton">
       <property name="minimumSize">
        <size>
         <width>350</width>

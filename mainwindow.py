@@ -32,31 +32,31 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout.addItem(self.horizontalSpacer)
 
-        self.SendButton = QPushButton(self.centralwidget)
-        self.SendButton.setObjectName(u"SendButton")
-        self.SendButton.setMinimumSize(QSize(350, 350))
+        self.RecvButton = QPushButton(self.centralwidget)
+        self.RecvButton.setObjectName(u"RecvButton")
+        self.RecvButton.setMinimumSize(QSize(350, 350))
         icon = QIcon()
         icon.addFile(u"downloads.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.SendButton.setIcon(icon)
-        self.SendButton.setIconSize(QSize(150, 250))
-        self.SendButton.setFlat(False)
+        self.RecvButton.setIcon(icon)
+        self.RecvButton.setIconSize(QSize(150, 250))
+        self.RecvButton.setFlat(False)
 
-        self.horizontalLayout.addWidget(self.SendButton)
+        self.horizontalLayout.addWidget(self.RecvButton)
 
         self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.horizontalLayout.addItem(self.horizontalSpacer_3)
 
-        self.RecieveButton = QPushButton(self.centralwidget)
-        self.RecieveButton.setObjectName(u"RecieveButton")
-        self.RecieveButton.setMinimumSize(QSize(350, 350))
+        self.SendButton = QPushButton(self.centralwidget)
+        self.SendButton.setObjectName(u"SendButton")
+        self.SendButton.setMinimumSize(QSize(350, 350))
         icon1 = QIcon()
         icon1.addFile(u"up-loading.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.RecieveButton.setIcon(icon1)
-        self.RecieveButton.setIconSize(QSize(150, 200))
-        self.RecieveButton.setFlat(False)
+        self.SendButton.setIcon(icon1)
+        self.SendButton.setIconSize(QSize(150, 200))
+        self.SendButton.setFlat(False)
 
-        self.horizontalLayout.addWidget(self.RecieveButton)
+        self.horizontalLayout.addWidget(self.SendButton)
 
         self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
@@ -66,7 +66,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.SendButton.setDefault(False)
+        self.RecvButton.setDefault(False)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -74,7 +74,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.RecvButton.setText("")
         self.SendButton.setText("")
-        self.RecieveButton.setText("")
     # retranslateUi
 
