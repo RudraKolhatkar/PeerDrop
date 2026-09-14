@@ -1,0 +1,20 @@
+# PeerDrop .gitignore
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# IDE files
+.idea/
+.vscode/
+
+# Large binaries & temporary test files
+*.zip
+*.tar
+*.tar.gz
+*.iso
+Recv File
